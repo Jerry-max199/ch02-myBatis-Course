@@ -15,4 +15,14 @@ public class StudentDaoImpl implements StudentDao {
         sqlSession.close();
         return student;
     }
+
+    @Override
+    public int insertStudent(Student student) {
+        SqlSession sqlSession=MyUtil.getSession();
+        String sqlId="com.zzjm.dao.StudentDao.insertStudent";
+       int num=sqlSession.insert(sqlId,student);
+       sqlSession.commit();
+       sqlSession.close();
+        return num;
+    }
 }

@@ -3,7 +3,7 @@ package com.zzjm.domain;
 public class Student {
     private int id;
     private String name;
-    private String eamil;
+    private String email;
     private int age;
 
     public int getId() {
@@ -22,12 +22,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getEamil() {
-        return eamil;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEamil(String eamil) {
-        this.eamil = eamil;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getAge() {
@@ -43,7 +43,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", eamil='" + eamil + '\'' +
+                ", eamil='" + email + '\'' +
                 ", age=" + age +
                 '}';
     }

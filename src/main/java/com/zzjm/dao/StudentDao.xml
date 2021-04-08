@@ -6,4 +6,7 @@
     <select id="selectStudent" resultType="com.zzjm.domain.Student">
         select * from Student order by id
     </select>
+    <insert id="insertStudent">
+        insert into Student values (#{id},#{name},#{email},#{age})
+    </insert>
 </mapper>
